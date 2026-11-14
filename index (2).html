@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="" content=""/>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+        <title>PATHLOOM</title>
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <style>
+            body {
+                background-image: url(backgroungimg.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            </style>
+            
+            <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="pathloom.png" alt="Pathloom Logo" class="site-logo">
+            </a> 
+            </div>
+
+            <div class="site-title-container">
+                <section class="main-page-heading">
+                    <h1>PATHLOOM</h1>
+                    <h3>Find Your Path. Grow With Purpose.</h3>
+                </section>
+            </div>
+
+            <div class="menu-container">
+            <button id="menu-icon-button" class="hamburger" type="button" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+            </button>
+        
+            <nav id="nav-links-menu" class="nav-links">
+                <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+                <a href="avatar.html"> <i class="fas fa-user"></i> Your Companion</a>
+                <a href="journey.html"> <i class="fas fa-road"></i> Journey</a>
+                <a href="quests.html"> <i class="fas fa-tasks"></i> Quests</a>
+                <a href="setting.html"> <i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            </div>
+        
+        </header>
+        
+        
+        <hr>
+
+        <section id="login" class="login-section">
+            <button id="get-started-button" class="login-button" type="button" 
+            onclick="window.location.href='login.html';">Get Started</button>
+
+            <p id="welcome-message"></p>
+
+            <div id="personal-nav-buttons" class="personal-buttons" style="display: none;">
+                <button type="button" onclick="window.location.href='quests.html';">
+                    <i class="fa-solid fa-compass"></i>
+                    Explore Careers
+                </button>
+
+                <button type="button" onclick="window.location.href='journey.user.html';">
+                    <i class="fa-solid fa-road"></i>
+                    My Journey
+                </button>
+
+                <button type="button" onclick="window.location.href='settings.html';">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </button>
+            </div>
+        </section>
+
+        <section id="How-it-Works" class="Pathloom-info">
+            <h4><i class="fa-solid fa-seedling"></i><b>How Pathloom Works</b></h4>
+            <p><strong>01 — Find Your Path</strong></p>
+            <p>Tell Pathloom where you want to grow.</p>
+            <p>Choose your interests, goals, and the things you want to learn.
+                 Pathloom uses them to begin shaping a journey that’s yours.</p>
+
+                 <br>
+
+            <p><strong>02 — Learn Your Way</strong></p>
+            <p>Bring your ideas, notes, and resources with you.</p>
+            <p>Upload documents, images, notes, or learning material. 
+                Pathloom helps you understand them through explanations, 
+                summaries, quizzes, and challenges.</p>
+
+                <br>
+
+            <p><strong>03 — Turn Growth Into Quests</strong></p>
+            <p>Learn. Practice. Create. Explore.</p>
+            <p>Pathloom turns your goals into small, achievable quests.
+                 Complete them, build skills, earn XP, and keep moving forward.</p>
+
+                 <br>
+            
+            <p><strong>04 — Watch Your Path Grow</strong></p>
+            <p>Every step becomes part of your journey.</p>
+            <p>Track your progress, discover your strengths, unlock new experiences, 
+                and watch your personal path evolve as you grow.</p>
+        </section>
+
+        <section id="About-Pathloom" class="About-Us">
+            <h4><b>About Pathloom</b></h4>
+            <p>At Pathloom, we believe everyone has a unique path waiting to be discovered. 
+                In a world of endless choices, finding the right direction can feel overwhelming. 
+                Pathloom was created to help people explore their interests, discover their 
+                strengths, and grow with purpose through persoanlized learning experinces. 
+            </p>
+        </section>
+
+        <footer>
+        <p>Made with <i class="fa-solid fa-heart"></i> by D</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title>Software Developer Form</title>
+</head>
+<body data-career="Software Developer">
+
+    <header>
+            <style>
+                body {
+                    background-image: url(backgroungimg.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                }
+            </style>
+
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="pathloom.png" alt="Pathloom Logo" class="site-logo">
+                </a>
+            </div>
+
+            <div class="site-title-container">
+                <section class="main-page-heading">
+                    <h1>PATHLOOM</h1>
+                    <h3>Find Your Path. Grow With Purpose.</h3>
+                </section>
+            </div>
+
+            <div class="menu-container">
+                <button id="menu-icon-button" class="hamburger" type="button" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                </button>
+
+                <nav id="nav-links-menu" class="nav-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="avatar.html"><i class="fas fa-user"></i> Your Companion</a>
+                    <a href="journey.html"><i class="fas fa-road"></i> Journey</a>
+                    <a href="quests.html"><i class="fas fa-tasks"></i> Quests</a>
+                    <a href="setting.html"><i class="fas fa-cog"></i> Settings</a>
+                </nav>
+            </div>
+        </header>
+
+        <hr>
+
+    <div class="quiz-container">
+        <h1 id="selectedRoleHeading"><strong>SOFTWARE DEVELOPER</strong></h1>
+        <p class="subtitle">Rate how much you agree with each statement (1 = Disagree, 5 = Strongly Agree)</p>
+
+        <form id="relatabilityForm">
+
+    <div class="question-block">
+                <p class="question-title">1. I get excited when spending hours solving complex puzzles or logic problems.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q1" onclick="saveAnswer('q1', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q1" onclick="saveAnswer('q1', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q1" onclick="saveAnswer('q1', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q1" onclick="saveAnswer('q1', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q1" onclick="saveAnswer('q1', this.value)" value="5">5</label>
+                </div>
+            </div>
+     
+            
+    
+    <div class="question-block">
+                <p class="question-title">2. I am comfortable sitting in quiet focus for long periods to fix a single stubborn problem.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q2" onclick="saveAnswer('q2', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q2" onclick="saveAnswer('q2', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q2" onclick="saveAnswer('q2', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q2" onclick="saveAnswer('q2', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q2" onclick="saveAnswer('q2', this.value)" value="5">5</label>
+                </div>
+            </div>
+
+
+
+    <div class="question-block">
+                <p class="question-title">3. I naturally try to find automated or step-by-step shortcuts for repetitive daily tasks.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q3" onclick="saveAnswer('q3', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q3" onclick="saveAnswer('q3', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q3" onclick="saveAnswer('q3', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q3" onclick="saveAnswer('q3', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q3" onclick="saveAnswer('q3', this.value)" value="5">5</label>
+                </div>
+            </div>
+
+
+
+    <div class="question-block">
+                <p class="question-title">4. I enjoy breaking down massive, overwhelming projects into tiny, actionable pieces.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q4" onclick="saveAnswer('q4', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q4" onclick="saveAnswer('q4', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q4" onclick="saveAnswer('q4', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q4" onclick="saveAnswer('q4', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q4" onclick="saveAnswer('q4', this.value)" value="5">5</label>
+                </div>
+            </div>       
+            
+            
+
+    <div class="question-block">
+                <p class="question-title">5. I enjoy reading complex technical instructions to figure out how a system works.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q5" onclick="saveAnswer('q5', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q5" onclick="saveAnswer('q5', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q5" onclick="saveAnswer('q5', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q5" onclick="saveAnswer('q5', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q5" onclick="saveAnswer('q5', this.value)" value="5">5</label>
+                </div>
+            </div>   
+            
+
+
+    <div class="question-block">
+                <p class="question-title">6. I am patient enough to re-read confusing documentation until a concept finally clicks.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q6" onclick="saveAnswer('q6', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q6" onclick="saveAnswer('q6', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q6" onclick="saveAnswer('q6', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q6" onclick="saveAnswer('q6', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q6" onclick="saveAnswer('q6', this.value)" value="5">5</label>
+                </div>
+            </div> 
+
+
+
+    <div class="question-block">
+                <p class="question-title">7. I look forward to learning new tools and languages, even if my old skills become outdated.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q7" onclick="saveAnswer('q7', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q7" onclick="saveAnswer('q7', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q7" onclick="saveAnswer('q7', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q7" onclick="saveAnswer('q7', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q7" onclick="saveAnswer('q7', this.value)" value="5">5</label>
+                </div>
+            </div> 
+
+
+
+    <div class="question-block">
+                <p class="question-title">8. I enjoy working behind the scenes on technical logic more than presenting ideas to an audience.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q8" onclick="saveAnswer('q8', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q8" onclick="saveAnswer('q8', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q8" onclick="saveAnswer('q8', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q8" onclick="saveAnswer('q8', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q8" onclick="saveAnswer('q8', this.value)" value="5">5</label>
+                </div>
+            </div> 
+
+
+
+    <div class="question-block">
+                <p class="question-title">9. I can stay focused and motivated when working on projects entirely on my own.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q9" onclick="saveAnswer('q9', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q9" onclick="saveAnswer('q9', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q9" onclick="saveAnswer('q9', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q9" onclick="saveAnswer('q9', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q9" onclick="saveAnswer('q9', this.value)" value="5">5</label>
+                </div>
+            </div> 
+
+
+
+    <div class="question-block">
+                <p class="question-title">10. I feel a strong sense of satisfaction when bringing a complex digital creation to life.</p>
+                <div class="scale-options">
+                    <label class="scale-option"><input type="radio" name="q10" onclick="saveAnswer('q10', this.value)" value="1" required>1</label>
+                    <label class="scale-option"><input type="radio" name="q10" onclick="saveAnswer('q10', this.value)" value="2">2</label>
+                    <label class="scale-option"><input type="radio" name="q10" onclick="saveAnswer('q10', this.value)" value="3">3</label>
+                    <label class="scale-option"><input type="radio" name="q10" onclick="saveAnswer('q10', this.value)" value="4">4</label>
+                    <label class="scale-option"><input type="radio" name="q10" onclick="saveAnswer('q10', this.value)" value="5">5</label>
+                </div>
+            </div> 
+
+
+            <button id="software-dev-sumbit" class="software-dev-sumbit" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        <script src="script.js" defer></script>
+    
+</body>
+</html>

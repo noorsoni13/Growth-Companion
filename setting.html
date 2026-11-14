@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+        <title>Pathloom Quests World</title>
+    </head>
+    <body>
+        <header>
+            <style>
+                body {
+                    background-image: url(backgroungimg.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                }
+            </style>
+
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="pathloom.png" alt="Pathloom Logo" class="site-logo">
+                </a>
+            </div>
+
+            <div class="site-title-container">
+                <section class="main-page-heading">
+                    <h1>PATHLOOM</h1>
+                    <h3>Find Your Path. Grow With Purpose.</h3>
+                </section>
+            </div>
+
+            <div class="menu-container">
+                <button id="menu-icon-button" class="hamburger" type="button" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                </button>
+
+                <nav id="nav-links-menu" class="nav-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="avatar.html"><i class="fas fa-user"></i> Your Companion</a>
+                    <a href="journey.html"><i class="fas fa-road"></i> Journey</a>
+                    <a href="quests.html"><i class="fas fa-tasks"></i> Quests</a>
+                    <a href="setting.html"><i class="fas fa-cog"></i> Settings</a>
+                </nav>
+            </div>
+        </header>
+
+        <hr>
+
+        <section class="settings-section">
+            <h2>Settings</h2>
+
+            <div class="profile-settings">
+                <h3>Your Profile</h3>
+
+                <label for="settings-username">Username: </label>
+                <input type="text" id="settings-username">
+
+                <label for="settings-password">Password: </label>
+                <input type="password" id="settings-password">
+
+                <button type="button" id="save-profile-button">Save Changes
+                </button>
+
+            
+
+                <p id="settings-message"></p>
+            </div>
+        </section>
+
+         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+         <script src="supabase.js"></script>
+         <script src="login.js"></script>
+         <script src="script.js"></script>
+
+        </body>
+        </html>

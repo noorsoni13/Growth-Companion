@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Turret+Road:wght@400;700&display=swap');
+
+body{
+    background-color: rgb(4, 31, 6);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+.logo-link,
+.main-page-heading,
+.hamburger{
+    flex: 1;
+}
+
+
+.logo-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.site-logo{
+    height: 56px;
+    width: auto;
+    max-height: 64px;
+    display: block;
+    margin-top: 10px;
+}
+
+.hamburger {
+    background: transparent; 
+    border: none;             
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    text-align: right;
+    color: white;
+    align-items: flex-end;
+}
+
+.nav-links {
+    font-family: 'Pixelify Sans', cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(10, 67, 14);
+    position: absolute;        
+    top: 100%;                
+    right: 0;                  
+    width: 250px;            
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links.active{
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;                  
+    width: 250px;
+    display: block;
+}
+
+.nav-links a i{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-links a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(4, 31, 6);
+    transition: background-color 0.3s ease;
+}
+
+.main-page-heading h1 {
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.nav-links.active{
+    display: flex;
+}
+
+.main-page-heading h3 {
+    font-family: 'Turret Road', cursive;
+    color: white;
+    text-align: center;
+}
+
+.login-button{
+    text-align: center;
+    background-color: rgb(11, 71, 15);
+    color: white;
+    padding: 9px 20px;
+    height: 50px;
+    font-family: 'Pixelify Sans', cursive;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 25px;
+}
+
+.login-button:hover {
+    background-color: rgb(4, 31, 6);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.Pathloom-info{
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: rgba(13, 67, 18, 0.85);
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: left;
+    font-family: 'Anta', serif;
+}
+
+.Pathloom-info h4 {
+    font-family: 'Pixelify Sans', cursive;
+    color: #e8f8e8;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Pathloom-info p {
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.Pathloom-info p strong {
+    font-family: 'Pixelify Sans', cursive;
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.About-Us h4 {
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.About-Us p {
+    font-family: 'Turret Road', cursive;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+.About-Us {
+    margin: 30px auto 40px;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    max-width: 900px;
+}
+
+
+.avatar-heading-container h1{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 50px;
+}
+
+.avatar-heading-container h3{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Turret Road', cursive;
+    font-size: 25px;
+}
+
+.avatar-main-header{
+    color: white;
+    text-align: center;
+    margin-top: 20px;  
+    margin: 30px auto 40px;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    max-width: 900px;
+    margin-top: 50px;
+    font-family: 'Turret Road', cursive;
+}
+
+.avatar-main-header h2{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.avatar-main-header p{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Turret Road', cursive;
+    font-size: 19px;
+}
+
+.about-companion{
+    margin: 30px auto 40px;
+    padding: 5px 5px;
+    border-radius: 16px;
+    max-width: 500px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Pixelify Sans', cursive;
+    background-color: rgba(13, 67, 18, 0.85);
+}
+
+.make-companion{
+    margin: 30px auto 40px;
+    padding: 30px 25px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.companion-button{
+    text-align: center;
+    background-color: rgb(11, 71, 15);
+    color: white;
+    padding: 17px 25px;
+    font-family: 'Pixelify Sans', cursive;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.companion-button:hover {
+    background-color: rgb(8, 61, 11);
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.companion-abailities {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    margin: 30px auto 40px;
+}
+
+.companion-abailities .bud-feature {
+    background-color: rgba(13, 67, 18, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.companion-abailities .bud-feature h4 {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.companion-abailities .bud-feature p {
+    font-family: 'Turret Road', cursive;
+}
+
+.companion-abailities .bud-feature:hover {
+    background-color: rgba(6, 40, 8, 0.85);
+    transition: background-color 0.3s ease;
+}
+
+.companion-abailities .bud-feature i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #d9f7d9;
+}
+
+.companion-abailities .bud- h4 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.companion-abailities .bud-feature p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.more-about-comapanion {
+    margin: 30px auto 40px;
+    padding: 30px 25px;
+    max-width: 900px;
+    text-align: center;
+    background-color: rgba(13, 67, 18, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.more-about-comapanion p strong {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.more-about-comapanion p b {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.more-about-comapanion p {
+    font-family: 'Turret Road', cursive;
+}
+
+.journey-main-header{
+    margin: 30px auto 50px;
+    padding: 30px 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(13, 67, 18, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.journey-main-header h2{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 25px;
+    margin-bottom: 0.4rem}
+
+.journey-main-header p {
+    font-family: 'Turret Road', cursive;
+}
+
+.your-journey-button{
+    margin: 30px auto 40px;
+    padding: 30px 25px;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.journey-start-button{
+    background-color: rgba(20, 100, 28, 0.85);
+    border-radius: 2px;
+    border-color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.journey-start-button:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+.journey{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto 40px;
+}
+
+.journey-feature{
+    background-color: rgba(28, 90, 34, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    color: #ffffff;
+    padding: 23px 10px;
+    border-radius: 12px;
+}
+
+.journey-feature p strong{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 23px;
+}
+
+.journey-feature p{
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+}
+
+.journey-center-feature{
+    grid-column: 1 / -1; 
+    justify-self: center; 
+    width: min(50%, 500px);
+    box-sizing: border-box;
+    background-color: rgba(13, 67, 18, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    color: #ffffff;
+    padding: 23px 10px;
+    border-radius: 12px;
+}
+
+.journey-center-feature p strong{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 23px;
+}
+
+.journey-center-feature p{
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+}
+
+@media (max-width: 600px){
+    .journey{
+        grid-template-columns: minmax(0, 1fr);
+        width: calc(100% - 32px);
+        gap: 20px;
+    }
+
+    .journey-center-feature{
+        grid-column: auto;
+        width: 100%;
+    }
+}
+
+
+.quests-start-button{
+    display: inline-block;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+.quests-start-button:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+
+.multi-quests-button{
+    margin: 30px auto 40px;
+    padding: 30px 25px;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#quests-options{
+    width: min(900px, calc(100% - 40px));
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 320px));
+    gap: 24px;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#quests-options div{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(13, 67, 18, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: center;
+    font-family: 'Turret Road', cursive;
+}
+
+#quests-options div img{
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+    width: 100%;             
+    height: 180px;         
+    display: block;
+    object-fit: cover;      
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#quests-options div img:active{
+    transform: scale(1.05);
+}
+
+
+#quests-options div p{
+    margin: 8px 0;
+}
+
+#quests-options div p strong{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 23px;
+}
+
+#quests-options div:hover{
+    background-color: rgba(7, 35, 10, 0.85);
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    #quests-options{
+        grid-template-columns: minmax(0, 320px);
+        margin-top: 30px;
+    }
+}
+
+#selectedRoleHeading{
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    color: white;
+    background-color: rgb(51, 95, 51);
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    color: white;
+}
+
+.question-block{
+    background-color: #123528; 
+    border: 1px solid #1e4d3b;  
+    border-radius: 12px;       
+    padding: 20px;            
+    margin-bottom: 20px;  
+    text-align: left;         
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.question-block p{
+    font-family: 'Turret Road', cursive;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.question-title{
+    background-color: rgb(64, 112, 64);
+}
+
+.scale-options{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;               
+    align-items: center;
+}
+
+.scale-option{
+    color: white;
+}
+
+.software-dev-sumbit{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+#quests-options p button{
+    text-decoration: underline;
+}
+
+#quests-options p button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.software-dev-sumbit:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+.singer-sumbit{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+.singer-sumbit:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+.neurosurgeon-sumbit{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+.neurosurgeon-sumbit:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+.tattoo-artist-sumbit{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+.tattoo-artist-sumbit:hover{
+    background-color: rgba(14, 68, 19, 0.85);
+    cursor: pointer;
+}
+
+#welcome-message{
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer{
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.quiz-result-container{
+    padding: 24px;
+    background-color: rgba(13, 67, 18, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.quiz-result-container h2{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.quiz-result-container p{
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quiz-result-container button{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(20, 100, 28, 0.85);
+    border: 2px solid #ffffff;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none !important;
+}
+
+#saved-careers-section,
+.journey-section {
+    width: min(1000px, calc(100% - 40px));
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+#saved-careers-section h2,
+.journey-section h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+#saved-careers-list,
+#explored-careers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#saved-careers-list > p,
+#explored-careers-list > p {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    background: rgba(13, 67, 18, 0.85);
+    color: white;
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+}
+
+.saved-career-item,
+.explored-career-item {
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    background: rgba(13, 67, 18, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #saved-careers-section,
+    .journey-section {
+        width: calc(100% - 32px);
+    }
+
+    #saved-careers-list,
+    #explored-careers-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
